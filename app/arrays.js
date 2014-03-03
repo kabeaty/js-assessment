@@ -25,13 +25,12 @@ define(function() {
     },
 
     removeWithoutCopy : function(arr, item) {
-        new_arr = []
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i] != item) {
-                new_arr.push(arr[i]);
+        for (var i = arr.length; i--;) {
+            if (arr[i] === item) {
+                arr.splice(i, 1);
             }
         }
-        return new_arr;
+        return arr;
     },
 
     append : function(arr, item) {
