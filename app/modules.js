@@ -4,7 +4,6 @@ define(function() {
   return {
     createModule : function(str1, str2) {
 
-    }
   };
 });
 
