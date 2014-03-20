@@ -5,7 +5,7 @@ define(function() {
     fizzBuzz : function(num) {
       if (isNaN(num) || num === null) {
         return false;
-      } else if (num % 3 === 0 && num % 5 === 0) {
+      } else if (num % 15 === 0) {
         return 'fizzbuzz';
       } else if (num % 3 === 0) {
         return 'fizz';
@@ -14,6 +14,9 @@ define(function() {
       } else {
         return num;
       }
+      //could also use type of num === "number" to print out
+      //nums
+
       // write a function that receives a number as its argument;
       // if the number is divisible by 3, the function should return 'fizz';
       // if the number is divisible by 5, the function should return 'buzz';

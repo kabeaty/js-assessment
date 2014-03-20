@@ -32,11 +32,9 @@ define(function() {
         var names = fn;
         var string1 = str1;
         var string2 = str2;
-        if (typeof x === "undefined") {
         return function (punctuation) {
             return names(str1, str2, punctuation);
             }
-        }
     },
 
     useArguments : function() {
